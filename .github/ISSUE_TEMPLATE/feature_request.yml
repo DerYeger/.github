@@ -20,9 +20,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: context
+    id: additional
     attributes:
-      description: "Add any other context or screenshots about the feature request here."
+      description: "If applicable, add any other context about the problem here"
       label: "Additional context"
-    validations:
-      required: true
