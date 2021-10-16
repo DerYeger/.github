@@ -1,6 +1,6 @@
 name: "🐞 Bug report"
-about: "Create a report to help us improve"
-labels: bug
+description: "Create a report to help us improve"
+labels: [bug]
 body: 
   - 
     attributes: 
