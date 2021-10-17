@@ -1,4 +1,5 @@
 name: '📃 Missing or incorrect documentation'
+title: '[Documentation]: '
 description: 'Create a report to help us improve'
 labels: [documentation]
 body:

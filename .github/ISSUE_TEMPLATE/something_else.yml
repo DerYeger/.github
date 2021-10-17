@@ -1,4 +1,5 @@
 name: 'ℹ️ Something else'
+title: '[Question]: '
 description: Submit something that does not fit into the other categories
 labels: [question]
 body:

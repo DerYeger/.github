@@ -1,28 +1,29 @@
 name: '🐞 Bug report'
+title: '[Bug]: '
 description: 'Create a report to help us improve'
 labels: [bug]
 body:
-  - attributes:
+  - type: textarea
+    id: bug-description
+    attributes:
       description: 'A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!'
       label: 'Description'
       placeholder: 'Bug description'
-    id: bug-description
-    type: textarea
     validations:
       required: true
-  - attributes:
+  - type: textarea
+    id: reproduction
+    attributes:
       description: 'Please provide a link to a repository that can reproduce the problem you ran into. If a report is vague (e.g. just a generic error message) and has no reproduction, it will receive a "need reproduction" label. If no reproduction is provided after we might close it.'
       label: 'Reproduction'
       placeholder: 'Reproduction'
-    id: reproduction
-    type: textarea
     validations:
       required: true
-  - attributes:
+  - type: textarea
+    id: additonal
+    attributes:
       description: 'If applicable, add any other context about the problem here.'
       label: 'Additional context'
-    id: additonal
-    type: textarea
   - type: checkboxes
     id: assign
     attributes:
@@ -30,4 +31,3 @@ body:
       description: 'Select everything that applies to you'
       options:
         - label: 'I want to be assigned to and work on this issue myself'
-
