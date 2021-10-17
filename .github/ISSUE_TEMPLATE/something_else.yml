@@ -1,24 +1,30 @@
-
-name: "ℹ️ Something else"
-description: Something else
+name: 'ℹ️ Something else'
+description: Submit something that does not fit into the other categories
 labels: [question]
 body:
   - type: textarea
     id: issue-description
     attributes:
-      description: "Describe your issue"
-      label: Description
-      placeholder: "A clear and concise description of what the problem is."
+      description: 'A clear and concise description of what the issue is.'
+      label: 'Description'
+      placeholder: 'Issue description'
     validations:
       required: true
   - type: textarea
     id: solution-description
     attributes:
-      description: "Describe the solution you'd like"
-      label: Solution
-      placeholder: "A clear and concise description of what you want to happen."
+      description: 'A clear and concise description of what you want to happen.Describe the solution you'd like'
+      label: 'Solution'
+      placeholder: 'Solution description'
   - type: textarea
     id: additional
     attributes:
-      description: "If applicable, add any other context about the problem here"
-      label: "Additional context"
+      description: 'If applicable, add any other context about the problem here.'
+      label: 'Additional context'
+  - type: checkboxes
+    id: assign
+    attributes:
+      label: 'Preferences'
+      description: 'Select everything that applies to you'
+      options:
+        - label: 'I want to be assigned to and work on this issue myself'

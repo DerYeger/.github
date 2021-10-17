@@ -1,0 +1,24 @@
+name: '📃 Missing or incorrect documentation'
+description: 'Create a report to help us improve'
+labels: [documentation]
+body:
+  - attributes:
+      description: 'A clear and concise description of what exactly is missing or incorrect. If you intend to submit a PR for this issue, tell us in the description. Thanks!'
+      label: 'Description'
+      placeholder: 'Description'
+    id: documentation-description
+    type: textarea
+    validations:
+      required: true
+  - attributes:
+      description: 'If applicable, add any other context about the problem here.'
+      label: 'Additional context'
+    id: additonal
+    type: textarea
+  - type: checkboxes
+    id: assign
+    attributes:
+      label: 'Preferences'
+      description: 'Select everything that applies to you'
+      options:
+        - label: 'I want to be assigned to and work on this issue myself'
