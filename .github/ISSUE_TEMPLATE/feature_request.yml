@@ -1,28 +1,30 @@
 name: '✨ Feature request'
-title: '[Feature]: '
-description: Suggest an idea for this project
+title: 'feat: '
+description: Suggest a feature for this project
 labels: [enhancement]
 body:
+  - type: checkboxes
+    id: packages
+    attributes:
+      label: 'Affected Packages'
+      description: 'Select every package affected by this feature request'
+      options:
+        - label: '@yeger/eslint-config'
+        - label: '@yeger/vue-masonry-wall'
+        - label: '@yeger/vue2-masonry-wall'
+        - label: 'vecti'
   - type: textarea
     id: feature-description
     attributes:
-      description: 'A clear and concise description of what the problem is.'
+      description: 'A clear and concise description of the requested feature.'
       label: 'Description'
       placeholder: 'Feature description'
     validations:
       required: true
   - type: textarea
-    id: solution-description
-    attributes:
-      description: 'A clear and concise description of what you want to happen.'
-      label: 'Solution'
-      placeholder: 'Solution description'
-    validations:
-      required: true
-  - type: textarea
     id: additional
     attributes:
-      description: 'If applicable, add any other context about the problem here.'
+      description: 'If applicable, add any other context about the feature here.'
       label: 'Additional context'
   - type: checkboxes
     id: assign
