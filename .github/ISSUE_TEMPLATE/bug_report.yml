@@ -1,12 +1,22 @@
 name: '🐞 Bug report'
-title: '[Bug]: '
+title: 'bug: '
 description: 'Create a report to help us improve'
 labels: [bug]
 body:
+  - type: checkboxes
+    id: packages
+    attributes:
+      label: 'Affected Packages'
+      description: 'Select every package affected by this bug'
+      options:
+        - label: '@yeger/eslint-config'
+        - label: '@yeger/vue-masonry-wall'
+        - label: '@yeger/vue2-masonry-wall'
+        - label: 'vecti'
   - type: textarea
     id: bug-description
     attributes:
-      description: 'A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!'
+      description: 'A clear and concise description of the bug.'
       label: 'Description'
       placeholder: 'Bug description'
     validations:
@@ -14,7 +24,7 @@ body:
   - type: textarea
     id: reproduction
     attributes:
-      description: 'Please provide a link to a repository that can reproduce the problem you ran into. If a report is vague (e.g. just a generic error message) and has no reproduction, it will receive a "need reproduction" label. If no reproduction is provided after we might close it.'
+      description: 'Please provide a link to a repository that can reproduce the problem you ran into. If a report is vague (e.g. just a generic error message) and has no reproduction, it will receive a "needs-reproduction" label. If no reproduction is provided we might close it.'
       label: 'Reproduction'
       placeholder: 'Reproduction'
     validations:
