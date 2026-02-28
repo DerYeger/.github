@@ -9,10 +9,20 @@ body:
       label: 'Affected Packages'
       description: 'Select every package affected by this bug'
       options:
-        - label: '@yeger/eslint-config'
+        - label: 'Formi'
+        - label: 'WienerTime'
+        - label: '@yeger/debounce'
+        - label: '@yeger/fol'
+        - label: '@yeger/streams'
+        - label: '@yeger/turbo-graph'
+        - label: '@yeger/vitest-utils'
         - label: '@yeger/vue-masonry-wall'
-        - label: '@yeger/vue2-masonry-wall'
+        - label: 'd3-graph-controller'
+        - label: 'key-hierarchy'
+        - label: 'resumon'
         - label: 'vecti'
+        - label: 'vue-fast-mount'
+        - label: 'vue-marmoset-viewer'
   - type: textarea
     id: bug-description
     attributes:
